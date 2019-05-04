@@ -1,0 +1,15 @@
+package rsa.shared;
+import java.io.Serializable;
+
+
+public enum RideRole implements Serializable, Comparable<RideRole> {
+	DRIVER,
+	PASSENGER;
+	
+	public RideRole other() {
+		if (this.equals(RideRole.DRIVER))
+			return RideRole.PASSENGER;
+		else
+			return RideRole.DRIVER;
+	}
+}

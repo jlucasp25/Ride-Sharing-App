@@ -1,0 +1,9 @@
+package rsa.service;
+import java.util.Comparator;
+import rsa.shared.RideMatchInfo;
+
+public interface RideMatchInfoSorter {
+	
+	Comparator<RideMatchInfo> getComparator();
+	
+}
